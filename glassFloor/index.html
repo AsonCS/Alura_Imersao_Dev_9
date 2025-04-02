@@ -4,8 +4,8 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-		<title>Alura Imersão Dev 9</title>
-		<meta name="description" content="Alura Imersão Dev 9" />
+		<title>Glass Floor</title>
+		<meta name="description" content="Glass Floor" />
 		<link
 			rel="icon"
 			href="https://asoncs.github.io/Alura_Imersao_Dev_9/img/logo.png"
@@ -13,46 +13,50 @@
 			sizes="512x512"
 		/>
 
-		<meta property="og:title" content="Alura Imersão Dev 9" />
-		<meta property="og:description" content="Alura Imersão Dev 9" />
+		<meta property="og:title" content="Glass Floor" />
+		<meta property="og:description" content="Glass Floor" />
 		<meta
 			property="og:image"
 			content="https://asoncs.github.io/Alura_Imersao_Dev_9/img/logo.png"
 		/>
 
 		<meta name="twitter:card" content="summary_large_image" />
-		<meta name="twitter:title" content="Alura Imersão Dev 9" />
-		<meta name="twitter:description" content="Alura Imersão Dev 9" />
+		<meta name="twitter:title" content="Glass Floor" />
+		<meta name="twitter:description" content="Glass Floor" />
 		<meta
 			name="twitter:image"
 			content="https://asoncs.github.io/Alura_Imersao_Dev_9/img/logo.png"
 		/>
 
 		<link rel="stylesheet" href="https://asoncs.github.io/AsonCS/util/css/reset.css" />
+		<link rel="stylesheet" href="../style.css" />
 		<link rel="stylesheet" href="style.css" />
 	</head>
-	<body onload="onLoad()">
+	<body>
 		<img src="https://i.postimg.cc/GpCxYmvc/title.png" alt="Logo" class="logo" />
 
 		<div class="container">
-			<nav>
-				<ul>
-					<li>
-						<a href="wons-converter/index.html">Wons Converter</a>
-					</li>
-					<li>
-						<a href="JoKenPo/index.html">Jo Ken Po</a>
-					</li>
-					<li>
-						<a href="glassFloor/index.html">Glass Floor</a>
-					</li>
-				</ul>
-			</nav>
+			<div class="content">
+				<h2>Pra ganhar, é preciso coragem!</h2>
+				<p>Até mesmo para pisar em um chão feito de vidro</p>
+				<h3>Bora jogar!</h3>
+
+				<input id="name" name="name" type="text" placeholder="Seu nome" required />
+
+				<span id="question"></span>
+				<input id="answer" name="answer" type="text" placeholder="Sua resposta" required />
+
+				<button id="btn-test" type="button" onclick="jogar()">Verificar Resposta</button>
+
+				<li id="last_players"></li>
+			</div>
 		</div>
 
 		<footer>
 			<a href="https://github.com/AsonCS" target="_blank">AsonCS</a> - Alura - Imersão DEV -
 			2025
 		</footer>
+
+		<script src="index.js"></script>
 	</body>
 </html>
