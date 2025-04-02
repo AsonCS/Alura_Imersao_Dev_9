@@ -23,7 +23,8 @@ body {
 
 /* Container with the background image */
 .container {
-	background: url('img/logo.png') no-repeat center center/cover;
+	background: url('https://asoncs.github.io/Alura_Imersao_Dev_9/img/logo.png') no-repeat center
+		center/cover;
 	display: flex;
 	justify-content: center;
 	align-items: center;
