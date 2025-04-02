@@ -1,58 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Jo Ken Po - 🪨🧻✂️</title>
+		<meta
+			name="description"
+			content="A simple game, where you chose between 🪨🧻✂️, but I made this funnier, by giving to the computer advantage, there is a test button that can be used with the console, to understand this 😅"
+		/>
+		<link
+			rel="icon"
+			href="https://asoncs.github.io/Alura_Imersao_Dev_9/img/logo.png"
+			type="image/png"
+			sizes="512x512"
+		/>
 
-	<title>Jo Ken Po - 🪨🧻✂️</title>
-	<meta name="description" content="Jo Ken Po - 🪨🧻✂️" />
-	<link rel="icon" href="https://asoncs.github.io/Alura_Imersao_Dev_9/img/logo.png" type="image/png" sizes="512x512" />
+		<meta property="og:title" content="Jo Ken Po - 🪨🧻✂️" />
+		<meta
+			property="og:description"
+			content="A simple game, where you chose between 🪨🧻✂️, but I made this funnier, by giving to the computer advantage, there is a test button that can be used with the console, to understand this 😅"
+		/>
+		<meta
+			property="og:image"
+			content="https://asoncs.github.io/Alura_Imersao_Dev_9/img/logo.png"
+		/>
 
-	<meta property="og:title" content="Jo Ken Po - 🪨🧻✂️" />
-	<meta property="og:description" content="Jo Ken Po - 🪨🧻✂️" />
-	<meta property="og:image" content="https://asoncs.github.io/Alura_Imersao_Dev_9/img/logo.png" />
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:title" content="Jo Ken Po - 🪨🧻✂️" />
+		<meta
+			name="twitter:description"
+			content="A simple game, where you chose between 🪨🧻✂️, but I made this funnier, by giving to the computer advantage, there is a test button that can be used with the console, to understand this 😅"
+		/>
+		<meta
+			name="twitter:image"
+			content="https://asoncs.github.io/Alura_Imersao_Dev_9/img/logo.png"
+		/>
 
-	<meta name="twitter:card" content="summary_large_image" />
-	<meta name="twitter:title" content="Jo Ken Po - 🪨🧻✂️" />
-	<meta name="twitter:description" content="Jo Ken Po - 🪨🧻✂️" />
-	<meta name="twitter:image" content="https://asoncs.github.io/Alura_Imersao_Dev_9/img/logo.png" />
+		<link rel="stylesheet" href="https://asoncs.github.io/AsonCS/util/css/reset.css" />
+		<link rel="stylesheet" href="../style.css" />
+		<link rel="stylesheet" href="style.css" />
+	</head>
 
-	<link rel="stylesheet" href="https://asoncs.github.io/AsonCS/util/css/reset.css" />
-	<link rel="stylesheet" href="../style.css" />
-	<link rel="stylesheet" href="style.css" />
-</head>
+	<body>
+		<img src="https://i.postimg.cc/GpCxYmvc/title.png" alt="Logo" class="logo" />
 
-<body>
-	<img src="https://i.postimg.cc/GpCxYmvc/title.png" alt="Logo" class="logo" />
+		<div class="container">
+			<form id="form" class="content" target="#">
+				<div>
+					<h2>Pra ganhar é preciso arriscar!</h2>
+					<p>PEDRA, PAPEL ou TESOURA?</p>
+				</div>
 
-	<div class="container">
-		<form id="form" class="content" target="#">
-			<div>
-				<h2>Pra ganhar é preciso arriscar!</h2>
-				<p>PEDRA, PAPEL ou TESOURA?</p>
-			</div>
+				<h3>Bora jogar, escolha sua jogada!</h3>
 
-			<h3>Bora jogar, escolha sua jogada!</h3>
+				<div>
+					<input type="button" value="🪨" onclick="play('🪨')" />
+					<input type="button" value="🧻" onclick="play('🧻')" />
+					<input type="button" value="✂️" onclick="play('✂️')" />
+				</div>
 
-			<div>
-				<input type="button" value="🪨" onclick="play('🪨')" />
-				<input type="button" value="🧻" onclick="play('🧻')" />
-				<input type="button" value="✂️" onclick="play('✂️')" />
-			</div>
+				<div id="result-container">
+					<span id="computer"></span>
+					<span id="result"></span>
+				</div>
 
-			<div id="result-container">
-				<span id="computer"></span>
-				<span id="result"></span>
-			</div>
+				<button id="btn-test" type="button" onclick="test()">Rodar tests</button>
+			</form>
+		</div>
 
-			<button id="btn-test" type="button" onclick="test()">Rodar tests</button>
-	</div>
-	</div>
+		<footer>
+			<a href="https://github.com/AsonCS" target="_blank">AsonCS</a> - Alura - Imersão DEV -
+			2025
+		</footer>
 
-	<footer><a href="https://github.com/AsonCS" target="_blank">AsonCS</a> - Alura - Imersão DEV - 2025</footer>
-
-	<script src="index.js"></script>
-</body>
-
+		<script src="index.js"></script>
+	</body>
 </html>
