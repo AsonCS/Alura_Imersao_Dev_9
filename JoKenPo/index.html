@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<title>Jo Ken Po - 🪨🧻✂️</title>
+	<meta name="description" content="Jo Ken Po - 🪨🧻✂️" />
+	<link rel="icon" href="/img/logo.png" type="image/png" sizes="512x512" />
+
+	<meta property="og:title" content="Jo Ken Po - 🪨🧻✂️" />
+	<meta property="og:description" content="Jo Ken Po - 🪨🧻✂️" />
+	<meta property="og:image" content="/img/logo.png" />
+
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:title" content="Jo Ken Po - 🪨🧻✂️" />
+	<meta name="twitter:description" content="Jo Ken Po - 🪨🧻✂️" />
+	<meta name="twitter:image" content="/img/logo.png" />
+
+	<link rel="stylesheet" href="https://asoncs.github.io/AsonCS/util/css/reset.css" />
+	<link rel="stylesheet" href="/style.css" />
+	<link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+	<img src="https://i.postimg.cc/GpCxYmvc/title.png" alt="Logo" class="logo" />
+
+	<div class="container">
+		<form id="form" class="content" target="#">
+			<div>
+				<h2>Pra ganhar é preciso arriscar!</h2>
+				<p>PEDRA, PAPEL ou TESOURA?</p>
+			</div>
+
+			<h3>Bora jogar, escolha sua jogada!</h3>
+
+			<div>
+				<input type="button" value="🪨" onclick="play('🪨')" />
+				<input type="button" value="🧻" onclick="play('🧻')" />
+				<input type="button" value="✂️" onclick="play('✂️')" />
+			</div>
+
+			<div id="result-container">
+				<span id="computer"></span>
+				<span id="result"></span>
+			</div>
+
+			<button id="btn-test" type="button" onclick="test()">Rodar tests</button>
+	</div>
+	</div>
+
+	<footer>AsonCS - Alura - Imersão DEV - 2025</footer>
+
+	<script src="index.js"></script>
+</body>
+
+</html>

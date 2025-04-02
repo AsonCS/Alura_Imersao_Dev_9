@@ -1,0 +1,97 @@
+/* Global Styles */
+body {
+	background-color: black;
+	margin: 0;
+	padding: 0;
+	font-family: Arial, sans-serif;
+	color: white;
+
+	overflow: hidden;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+
+/* Logo Styles */
+.logo {
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	max-width: 150px;
+	width: auto;
+}
+
+/* Container with the background image */
+.container {
+	background: url('/img/logo.png') no-repeat center center/cover;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	flex: 1;
+}
+
+.container a {
+	font-size: 2em;
+	font-weight: bold;
+	color: #ff1b7b;
+	background-color: rgba(0, 0, 0, 0.8);
+}
+
+.container li {
+	margin: 10px;
+	list-style: disc;
+}
+
+/* Content div for text and button */
+.content {
+	text-align: center;
+	background-color: rgba(0, 0, 0, 0.5);
+	padding: 20px 40px;
+	border-radius: 8px;
+
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.content input {
+	background-color: black;
+	color: #ff1b7b;
+	padding: 10px;
+	border: 1px solid #ff1b7b;
+	border-radius: 5px;
+}
+
+input::placeholder {
+	color: #ff1b7b;
+}
+
+.content span {
+	background-color: black;
+	font-weight: bold;
+	padding: 10px;
+	border-radius: 5px;
+}
+
+/* Button Styles */
+button {
+	background-color: #ff1b7b;
+	border: none;
+	border-radius: 5px;
+	padding: 10px 20px;
+	font-size: 1.2em;
+	color: white;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+}
+
+button:hover {
+	background-color: #1abc9c;
+}
+
+/* Footer Styles */
+footer {
+	text-align: center;
+	padding: 10px;
+}
