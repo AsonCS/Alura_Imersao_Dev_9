@@ -1,0 +1,95 @@
+body {
+	background: url('https://asoncs.github.io/Alura_Imersao_Dev_9/img/logo.png') no-repeat center
+		center fixed;
+	background-color: black;
+	background-size: cover;
+	font-family: 'Gabarito', sans-serif;
+}
+
+.logo {
+	text-align: end;
+}
+
+.logo img {
+	width: 40%;
+}
+
+.titulo {
+	font-weight: bold;
+	padding-left: 25px;
+}
+
+.spacer {
+	flex: 1;
+}
+
+/* Caixa principal do jogo */
+.conteudo-jogo {
+	background: rgba(0, 0, 0, 0.7);
+	box-shadow: 0 0 5px #ff1b7b;
+	margin: 30px;
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 20px;
+	border-radius: 20px;
+	justify-content: center;
+	margin-top: 2rem;
+	font-weight: bold;
+	font-size: 1.4em;
+}
+
+.characters {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 20px;
+	flex-wrap: wrap;
+}
+
+.characters div {
+	align-content: center;
+	background: rgba(255, 255, 255, 0.2);
+	box-shadow: 0 0 5px #fff;
+	border-radius: 10px;
+	cursor: pointer;
+	font-size: 2em;
+	padding: 10px;
+	text-align: center;
+	width: fit-content;
+}
+
+.characters div.selected {
+	background: rgba(255, 27, 123, 0.4);
+}
+
+.characters div.selectedComputer {
+	background: rgba(27, 255, 123, 0.4);
+}
+
+.characters div:hover {
+	background: rgba(255, 27, 123, 0.8);
+	box-shadow: 0 0 20px #fff;
+	cursor: pointer;
+}
+
+/* Títulos e textos */
+h2,
+p {
+	color: white;
+}
+
+button {
+	padding: 10px 20px;
+	margin: 10px;
+	border: none;
+	background: #ff1b7b;
+	color: white;
+	cursor: pointer;
+	transition: background 0.3s;
+}
+
+button:hover {
+	background: #19caca;
+}
