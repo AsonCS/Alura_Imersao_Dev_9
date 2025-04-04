@@ -10,3 +10,5 @@
     - A quiz game, just answer the weird questions 😅
 4. [Better of Three](https://asoncs.github.io/Alura_Imersao_Dev_9/BetterOfThree/)
     - Just chose a character and play against the computer
+5. [Final Quiz](https://asoncs.github.io/Alura_Imersao_Dev_9/FinalQuiz/)
+    - A multiple choice quiz to test your knowledge
